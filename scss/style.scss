@@ -1,0 +1,536 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #3D248A;
+  scroll-behavior: smooth;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #8D8D8D;
+}
+$rounded-font:'M PLUS Rounded 1c', sans-serif;
+$revalia-font: 'Revalia', cursive;
+$ruda-font: 'Ruda', sans-serif;
+$roboto-font: 'Roboto', sans-serif;
+$title-fontsize: 48px;
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@mixin title-fonts ($title-fontsize) {
+  font-weight: 900;
+  font-size: $title-fontsize;
+  line-height: 56px;
+}
+.container{
+  width: 1440px;
+  margin: auto;
+}
+.header{
+  width: 1440px;
+  height: 102px;
+  background: #3D248A;
+  @include flex();
+}
+.nav-list{
+  width: 752px;
+  @include flex();
+}
+.nav-links{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.nav-input{
+  width: 82px;
+  height: 36px;
+  background: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 90px;
+  outline: none;
+  color: #FFFFFF;
+  padding:5px 10px ;
+}
+.fa-magnifying-glass{
+  font-size: 19px;
+  color: #FFFFFF;
+  background-color: #3D248A;
+}
+.fa-magnifying-glass:hover{
+  color: #bfbcbc;
+  cursor: pointer;
+}
+.nav-btn{
+  border: none;
+  margin-left: -30px;
+}
+
+.site-hero{
+  margin-top: 45px;
+  width: 1440px;
+  height: 427px;
+  background-image: url('../img/hero-img.svg');
+}
+.hero-txt{
+  margin-top: 58px;
+  text-align: left;
+  width: 750px;
+  float: right;
+}
+.hero-title{
+  width: 551px;
+  @include title-fonts($title-fontsize);
+}
+
+.hero-para{
+  width: 515px;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 56px;
+  margin-top: 60px;
+}
+#for-you{
+  width: 1440px;
+  height: 623px;
+  background-image: url('../img/what-we-do-you.svg');
+}
+
+.for-you-txt{
+  margin: auto;
+  width: 1082px;
+  height: 440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.for-you-title{
+  // margin-top: 354px;
+  // margin-left: 196px;
+  width: 247px;
+  @include title-fonts(36px);
+}
+.for-you-para{
+  width: 640px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+}
+.read-more{
+  margin-left: 500px;
+  margin-top: 30px;
+  border: 2px solid #E0E0E0;
+  border-radius: 90px;
+  padding: 15px 22px;
+  background: none;
+}
+.read-more:hover{
+  background-color: #bfbcbc;
+  cursor: pointer;
+}
+#products{
+  margin: auto;
+  width: 1440px;
+  height: 805px;
+  background-image: url('../img/products.svg');
+  background-repeat: no-repeat;
+}
+.product-title{
+  width: 577px;
+  padding-top: 26px;
+  margin-left: 129px;
+  @include title-fonts($title-fontsize);
+}
+.products-names-list {
+  margin: auto;
+  width: 1190px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+.products-name-items {
+  width: 200px;
+}
+.products-info-list {
+  margin: auto;
+  margin-top: 50px;
+  width: 1190px;
+  display: flex;
+  justify-content: space-between;
+}
+.product-info-items {
+  width: 200px;
+}
+
+.product-info-items>p{
+  width: 180px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+}
+
+.for-business{
+  width: 1440px;
+  height: 838px;
+  background-image: url('../img/for-business.svg');
+
+}
+.for-business-title{
+  width: 812px;
+  padding-top: 43px;
+  margin:0 0 68px 127px;
+  @include title-fonts(48px)
+}
+.business-cards {
+  margin: auto;
+  width: 1256px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.business-card-items {
+  text-align: center;
+  margin: auto;
+  width: 356px;
+  height: 518px;
+  box-shadow: 0px 0px 40px rgba(146, 163, 255, 0.25);
+  border-radius: 63px;
+  background-color: #FFFFFF;
+}
+.business-card-img{
+  margin: 55px 0 60px 0;
+}
+.business-card-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 22px;
+}
+.business-card-info {
+  margin: auto;
+  width: 238px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+  text-align: left;
+}
+#plan{
+  width: 1440px;
+  height: 764px;
+  background: linear-gradient(0deg, #3D248A, #3D248A), #FF5784;
+}
+.plan-title{
+  padding-top: 59px;
+  margin-bottom: 23px;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.plan-cards {
+  margin: auto;
+  width: 1256px;
+  display: flex;
+  justify-content: space-between;
+}
+.plan-card-items {
+  text-align: center;
+  width: 356px;
+  height: 536px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(146, 163, 255, 0.25);
+  border-radius: 63px;
+}
+.plan-card-title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 81px 0 34px 0;
+}
+.plan-btn {
+  width: 249px;
+  height: 51px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  border-radius: 90px;
+  border: none;
+}
+.period {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #8D8D8D;
+  margin: 19px 0 41px 0;
+}
+.plan-card-info {
+  margin: auto;
+  width: 238px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+  text-align: left;
+}
+.blue{
+  color: #7FF7FF;
+}
+.blue-btn{
+  background: #00F0FF;
+}
+.blue-btn:hover{
+  background: #08bdca;
+  cursor: pointer;
+}
+.yellow{
+  color: #FFC700;
+}
+.yellow-btn{
+  background: #FFC700;
+}
+.yellow-btn:hover{
+  background: #ab8705;
+  cursor: pointer;
+}
+.pink{
+  color: #FF5784;
+}
+.pink-btn{
+  background: #FF5784;
+}
+.pink-btn:hover{
+  background: #cf2f5a;
+  cursor: pointer;
+}
+#wowstart-register{
+  width: 1440px;
+  height: 620px;
+  background-image: url('../img/wowstart.svg');
+  text-align: center;
+}
+.wowstart-register-title {
+  padding-top: 95px;
+  margin: 0 auto 55px auto ;
+  width: 502px;
+  @include title-fonts($title-fontsize)
+}
+.wowstart-register-para {
+  margin: auto;
+  width: 391px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+}
+.wowstart-register-btn {
+  width: 427px;
+  height: 72px;
+  background: #FF5784;
+  border-radius: 90px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  border: none;
+  margin: 55px 0 31px 0;
+}
+.wowstart-register-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 33px;
+}
+.services{
+  width: 1440px;
+  height: 490px;
+  background-image: url('../img/our-service.svg');
+}
+.services-title{
+  padding-top: 50px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+.wowstart-subscribe{
+  width: 1440px;
+  height: 598px;
+  background-image: url('../img/wowstart-subscribe.svg');
+}
+.wowstart-subscribe-txt{
+  width: 465px;
+  text-align: center;
+  margin-left:759px;
+  padding-top: 137px;
+}
+.wowstart-subscribe-title{
+  width: 472px;
+  text-align: center;
+  color: #FFFFFF;
+  @include title-fonts($title-fontsize)
+}
+.wowstart-subscribe-input{
+  width: 425px;
+  height: 65px;
+  padding: 22px 15px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+  background: #FFFFFF;
+  border: 2px solid #8D8D8D;
+  border-radius: 90px;
+  margin: 39px 0 29px 0;
+  outline: none;
+}
+.wowstart-subscribe-btn{
+  width: 350px;
+  height: 75px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  background: #FF5784;
+  border-radius: 90px;
+  border: none;
+}
+.customers{
+  width: 1440px;
+  height: 720px;
+  background-image: url('../img/customers.svg');
+
+}
+.customers-title{
+  padding-top: 78px;
+  text-align: center;
+  @include title-fonts($title-fontsize)
+}
+.customers-list{
+  margin-top: 312px;
+  width: 1440px;
+  height: 190px;
+  .customers-list-item{
+    width: 238px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 33px;
+  }
+  @include flex()
+}
+#partners{
+  width: 1440px;
+  height: 466px;
+  background-image: url('../img/partners.svg');
+}
+.partners-title {
+  padding-top: 52px;
+  text-align: center;
+  @include title-fonts($title-fontsize)
+}
+.partners-title-list{
+  margin: auto;
+  margin-top: 75px ;
+  width: 1390px;
+  @include flex()
+}
+.partners-list {
+  margin: auto;
+  margin-left: 115px;
+  margin-top: 30px;
+  width: 1290px;
+  @include flex();
+}
+.partners-list-item {
+  // margin: auto;
+  width: 468px;
+}
+.partners-list-item-title {
+  font-family: $ruda-font;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
+}
+.partners-list-item-para {
+  width: 249px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+}
+.mplus-font{
+  margin-left: 50px;
+ font-family: $rounded-font;
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 53px;
+}
+.revalia-font{
+  font-family: $revalia-font;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.video{
+  width: 1440px;
+  height: 1019px;
+  background-image: url('../img/video-bcg.svg');
+}
+.video-title{
+  padding-top: 60px;
+  color: #FFFFFF;
+  text-align: center;
+  @include title-fonts($title-fontsize)
+}
+.video-vd{
+  margin: 85px 0 0 155px;
+}
+
+.teamwork{
+  width: 1400px;
+  height: 510px;
+  background-image: url('../img/teamwork-bcg.svg');
+}
+.teamwork-title{
+  padding-top: 44px;
+  margin-left: 94px;
+  @include title-fonts($title-fontsize)
+}
+.teamwork-para{
+  margin: 50px 0 0 94px;
+  width: 559px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+}
+
+.footer{
+  margin: auto;
+  width: 1440px;
+  height: 322px;
+  background-image: url('../img/footer-bcg.svg');
+}
+.footer-list{
+  padding-top: 100px;
+  margin-left: 95px;
+  width: 562px;
+  @include flex();
+
+}
+.footer-list-item{
+  width: 132px;
+}
+.footer-list-item>p{
+  margin-bottom:20px ;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
